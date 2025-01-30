@@ -1,23 +1,25 @@
 package Java_String;
-
 import java.util.Scanner;
 
 public class ToggleCase {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
-        StringBuilder result = new StringBuilder();
-        
+        String result = "";
+
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
-            if (Character.isUpperCase(ch)) {
-                result.append(Character.toLowerCase(ch));
+
+            if (ch >= 'A' && ch <= 'Z') {
+                result += (char) (ch + 32); // Convert uppercase to lowercase
+            } else if (ch >= 'a' && ch <= 'z') {
+                result += (char) (ch - 32); // Convert lowercase to uppercase
             } else {
-                result.append(Character.toUpperCase(ch));
+                result += ch; // Keep non-alphabetic characters unchanged
             }
         }
-        
-        System.out.println(result.toString());
+
+        System.out.println(result);
+        sc.close();
     }
 }
-

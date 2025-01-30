@@ -1,19 +1,27 @@
 package Java_String;
 
-import java.util.LinkedHashSet;
-
 public class RemoveDuplicates {
     public static void main(String[] args) {
         String str = "programming";
-        LinkedHashSet<Character> set = new LinkedHashSet<>();
+        String result = "";
+        boolean found;
+
         for (int i = 0; i < str.length(); i++) {
-            set.add(str.charAt(i));
+            char ch = str.charAt(i);
+            found = false;
+
+            for (int j = 0; j < result.length(); j++) {
+                if (result.charAt(j) == ch) {
+                    found = true;
+                    break;
+                }
+            }
+
+            if (!found) {
+                result += ch;
+            }
         }
-        StringBuilder result = new StringBuilder();
-        for (Character ch : set) {
-            result.append(ch);
-        }
-        System.out.println(result.toString());
+
+        System.out.println(result);
     }
 }
-
