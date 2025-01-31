@@ -1,5 +1,3 @@
-package Java_String;
-
 import java.util.Scanner;
 
 public class LexicographicalCompare {

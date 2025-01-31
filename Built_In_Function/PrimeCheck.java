@@ -1,3 +1,4 @@
+package Built_In_Function;
 import java.util.Scanner;
 
 public class PrimeCheck {

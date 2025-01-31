@@ -1,4 +1,4 @@
-package Java_String;
+// package Java_String;
 import java.util.Scanner;
 
 public class VowelConsonantCounter {

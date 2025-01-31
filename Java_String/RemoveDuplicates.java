@@ -1,4 +1,4 @@
-package Java_String;
+// package Java_String;
 
 public class RemoveDuplicates {
     public static void main(String[] args) {
