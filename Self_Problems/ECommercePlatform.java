@@ -1,4 +1,4 @@
-package Self_Problems;
+ackage Self_Problems;
 
 import java.util.ArrayList;
 import java.util.List;
