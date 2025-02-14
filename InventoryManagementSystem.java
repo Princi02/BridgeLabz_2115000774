@@ -88,6 +88,7 @@ class Inventory {
         for (Item i = head; i != null; i = i.nxt)
             for (Item j = head; j.nxt != null; j = j.nxt)
                 if (j.price > j.nxt.price) swap(j, j.nxt);
+    
     }
 
     void swap(Item a, Item b) {
