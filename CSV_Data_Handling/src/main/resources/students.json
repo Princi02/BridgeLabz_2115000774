@@ -1,0 +1,6 @@
+[
+  {"ID": 1, "Name": "John Doe", "Age": 20, "Marks": 85},
+  {"ID": 2, "Name": "Jane Smith", "Age": 22, "Marks": 78},
+  {"ID": 3, "Name": "Alice Johnson", "Age": 19, "Marks": 92},
+  {"ID": 4, "Name": "Bob Brown", "Age": 21, "Marks": 74}
+]
